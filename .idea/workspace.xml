@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="Next.js 설치 원복">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2PHU84d4WBw8LlU1AZVHMelBD4p" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\nextJs\public" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="" />
+      <created>1683113337401</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683113337401</updated>
+      <workItem from="1683113338622" duration="1310000" />
+      <workItem from="1684149298634" duration="771000" />
+      <workItem from="1684321298170" duration="15000" />
+      <workItem from="1693819870929" duration="8338000" />
+      <workItem from="1693907224113" duration="2293000" />
+      <workItem from="1693910692544" duration="341000" />
+    </task>
+    <task id="LOCAL-00001" summary="Next.Js란?">
+      <created>1693821451653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693821451653</updated>
+    </task>
+    <task id="LOCAL-00002" summary="About CSR">
+      <created>1693823736649</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693823736649</updated>
+    </task>
+    <task id="LOCAL-00003" summary="About SSG">
+      <created>1693824573994</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693824573994</updated>
+    </task>
+    <task id="LOCAL-00004" summary="About ISR">
+      <created>1693825153099</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693825153099</updated>
+    </task>
+    <task id="LOCAL-00005" summary="About SSR">
+      <created>1693825895964</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693825895964</updated>
+    </task>
+    <task id="LOCAL-00006" summary="About Hybrid Rendering">
+      <created>1693826360645</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693826360645</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Hydration">
+      <created>1693828169297</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693828169297</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Next.js 설치">
+      <created>1693909899064</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693909899064</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Next.js 설치 원복">
+      <created>1693910367638</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693910367638</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Next.Js란?" />
+    <MESSAGE value="About CSR" />
+    <MESSAGE value="About SSG" />
+    <MESSAGE value="About ISR" />
+    <MESSAGE value="About SSR" />
+    <MESSAGE value="About Hybrid Rendering" />
+    <MESSAGE value="Hydration" />
+    <MESSAGE value="Next.js 설치" />
+    <MESSAGE value="Next.js 설치 원복" />
+    <option name="LAST_COMMIT_MESSAGE" value="Next.js 설치 원복" />
+  </component>
+</project>
