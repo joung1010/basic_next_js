@@ -149,10 +149,6 @@ Next.js에서 하이드레이션이라 하면은 React로 가득채우다(Neaxt.
 #### 핵심은 정적인 페이지에서 하이드레이션이 진행되는 이 간격을 줄여나가는게 포인트이다.
 
 
-## 개발 환경
-[Next.js 공식사이트](https://nextjs.org/)  
-[Next.js 공식문서](https://nextjs.org/docs/getting-started/installation)
-
 ### 설치
 ```
 npx create-next-app@latest 
@@ -165,8 +161,23 @@ pnpm create next-app
 ## 구조
 ![img](public/app.png)  
 next.js 프로젝트를 다운로드 받으면 이렇게 app 이라는 디렉토리 안에 있는 page.tsx 파일이 있는데  
-이 페이지가 index.html 과 같이 가장 첫 페이지가 된다.  
-  
-![img2](public/app2.png)  
+이 페이지가 index.html 과 같이 가장 첫 페이지가 된다.
+
+![img2](public/app2.png)
 * next.config.js
-  * next 관련 설정파일
+    * next 관련 설정파일
+
+![img2](public/app3png.png)
+* dev
+    * 개발할때 쓰는 개발용 모드
+* build
+    * 프로젝트 빌드 사용 명령어
+* start
+    * 배포뒤 실핼할때 사용
+* lint
+    * 소스코드 검사할때 사용
+
+  
+기본 실행화면  
+![](public/app4png.png)  
+  
