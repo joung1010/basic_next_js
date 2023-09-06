@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="프로젝트 init">
-      <change afterPath="$PROJECT_DIR$/page/src/pages/about.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page/src/pages/member.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page/src/pages/products/phone.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page/src/pages/products/productsPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/page2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/page3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/page4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/page5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="Next.js Page 라우팅방법(12버전)">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/page/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694000354856</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Next.js Page 라우팅방법(12버전)">
+      <created>1694000924099</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1694000924099</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +185,7 @@
     <MESSAGE value="실행 명령어" />
     <MESSAGE value="note 프로젝트 init" />
     <MESSAGE value="프로젝트 init" />
-    <option name="LAST_COMMIT_MESSAGE" value="프로젝트 init" />
+    <MESSAGE value="Next.js Page 라우팅방법(12버전)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Next.js Page 라우팅방법(12버전)" />
   </component>
 </project>
