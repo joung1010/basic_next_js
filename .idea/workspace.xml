@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="note 프로젝트 init" />
+    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="프로젝트 init">
+      <change afterPath="$PROJECT_DIR$/page/src/pages/about.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/src/pages/member.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/src/pages/products/phone.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/src/pages/products/productsPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/page.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/page2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/page3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/page4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/page5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/page/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -39,6 +52,9 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\nextJs\public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\nextJs\public" />
     </key>
@@ -135,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693995077730</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="프로젝트 init">
+      <created>1694000354856</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1694000354856</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +188,7 @@
     <MESSAGE value="Next.js 설치 원복" />
     <MESSAGE value="실행 명령어" />
     <MESSAGE value="note 프로젝트 init" />
-    <option name="LAST_COMMIT_MESSAGE" value="note 프로젝트 init" />
+    <MESSAGE value="프로젝트 init" />
+    <option name="LAST_COMMIT_MESSAGE" value="프로젝트 init" />
   </component>
 </project>

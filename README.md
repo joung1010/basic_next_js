@@ -180,4 +180,6 @@ next.js 프로젝트를 다운로드 받으면 이렇게 app 이라는 디렉토
   
 기본 실행화면  
 ![](public/app4png.png)  
-  
+    
+## 라우팅
+![Next.js 라우팅](./page/README.md)  
