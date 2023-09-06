@@ -154,7 +154,7 @@ Next.js에서 하이드레이션이라 하면은 React로 가득채우다(Neaxt.
 npx create-next-app@latest 
 
 yarn create next-app 
-
+>특정 버전 yarn add next@13.1.6(버전)
 pnpm create next-app
 ```
 
