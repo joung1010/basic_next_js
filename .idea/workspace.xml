@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="Next.js Page 라우팅방법(12버전)">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="README 수정">
+      <change afterPath="$PROJECT_DIR$/page/src/app/about2/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/src/app/contact2/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/page/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694000924099</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="README 수정">
+      <created>1694001081832</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694001081832</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +197,7 @@
     <MESSAGE value="note 프로젝트 init" />
     <MESSAGE value="프로젝트 init" />
     <MESSAGE value="Next.js Page 라우팅방법(12버전)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Next.js Page 라우팅방법(12버전)" />
+    <MESSAGE value="README 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="README 수정" />
   </component>
 </project>
