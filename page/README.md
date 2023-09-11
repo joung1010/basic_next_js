@@ -45,3 +45,14 @@ app 이라는 경로를 만들게 되었을까??
 따라서 yarn build, npm run build 명령어를 통해 build를 하게 되면  
 ![](../public/page10.png)  
 이런식으로 라우팅 정보와 어떤 페이지가 정적인 페이지인지 아닌지 알 수 있다.
+  
+> 오류  
+> yarn build  
+> Type error: Cannot find module 'next/dist/lib/metadata/types/metadata-interface.js' or its corresponding type declarations.  
+> 
+> 프로젝트에서 npm install을 진행한후 npm build로 해결 
+  
+> 오류2  
+> Type error: Parameter 'props' implicitly has an 'any' type.  
+> npm build 시 타입스크립트 에러 발생  
+> props에 :any 타입을 명시적으로 지정해서 해결
