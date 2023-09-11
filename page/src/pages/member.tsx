@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Member(props) {
+function Member(props:any) {
     return (
         <div>member Info</div>
     );

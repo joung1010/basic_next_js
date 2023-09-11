@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Products2Page(props) {
+function Products2Page(props:any) {
     return (
         <div>Products2</div>
     );

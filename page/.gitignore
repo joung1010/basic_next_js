@@ -35,3 +35,5 @@ yarn-error.log*
 next-env.d.ts
 *.zip
 .yarn
+node_modules
+package-lock.json

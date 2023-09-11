@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PantsPage(props) {
+function PantsPage(props:any) {
     return (
         <div>Pants</div>
     );

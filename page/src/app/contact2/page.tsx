@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Contact2Page(props) {
+function Contact2Page(props:any) {
     return (
         <div>Contact 2</div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function About(props) {
+function About(props:any) {
     return (
         <h1>Abaout</h1>
     );
