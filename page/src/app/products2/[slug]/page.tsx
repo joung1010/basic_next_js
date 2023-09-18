@@ -12,4 +12,9 @@ function PantsPage({params}: Props) {
     );
 }
 
+export function generateStaticParams() {/*Next.js 규격함수명*/
+    const products = ['pants','shirts'];
+    return products.map(product => ({slug:product,}));
+}
+
 export default PantsPage;

@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="Next.js Page 라우팅방법(13버전)">
+    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="next.js dynamic routing">
+      <change afterPath="$PROJECT_DIR$/public/dynamic5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/page/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/app/products2/pants/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/app/products2/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/src/app/products2/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/app/products2/[slug]/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
       <workItem from="1693819870929" duration="8338000" />
       <workItem from="1693907224113" duration="2293000" />
       <workItem from="1693910692544" duration="341000" />
-      <workItem from="1695029121585" duration="2058000" />
+      <workItem from="1695029121585" duration="3333000" />
     </task>
     <task id="LOCAL-00001" summary="Next.Js란?">
       <created>1693821451653</created>
@@ -171,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694080645058</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="next.js dynamic routing">
+      <created>1695032149768</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1695032149768</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +213,7 @@
     <MESSAGE value="Next.js Page 라우팅방법(12버전)" />
     <MESSAGE value="README 수정" />
     <MESSAGE value="Next.js Page 라우팅방법(13버전)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Next.js Page 라우팅방법(13버전)" />
+    <MESSAGE value="next.js dynamic routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="next.js dynamic routing" />
   </component>
 </project>

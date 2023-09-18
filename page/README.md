@@ -88,4 +88,42 @@ export default PantsPage;
 ![](../public/dynamic3.png)  
 ![](../public/dynamic4.png)  
 build를 한곳을 보면 /product2 경로뒤에는 동적으로 페이지를 생성하기때문에 정적인 페이지가 만들어 지지 않는 것을 볼 수 있다.  
+  
+그러면 동적라우팅에서 특정한 페이지만을 미리 만들 수는 없을까??  
+예를 들어 특정 상품을 10개정도만 미리 정적이 페이지로 만들거나 사용자가 가장 많이 구매하는 상품등을 미리 만드는 방법은 없을까??  
+  
+## 페이지 미리생성
+다이나믹 페이지를 적용한 컴포넌트안에서 어떤 페이지를 미리 만들어 둘것인지 명시해주면 된다.  
+```
+import React from 'react';
+
+type Props = {
+    params: {
+        slug: string;
+    }
+}
+
+function PantsPage({params}: Props) {
+    return (
+        <div>{params.slug} 제품 설명을 해볼까나??</div>
+    );
+}
+
+export function generateStaticParams() {/*Next.js 규격함수명*/
+    const products = ['pants','shirts'];
+    return products.map(product => ({slug:product,}));
+}
+
+export default PantsPage;
+```  
+
+![](../public/dynamic5.png)  
+이렇게 `generateStaticParams`함수를 사용해서 특정 경로의 페이지를 미리 만들 수 있는 것을 확인할 수 있다.  
+  
+### 정리
+다이나믹 라우트를 사용하는 컴포넌트를 빌드하게 되면 이 `[slug]`페이지는 빌드시에 static 하게 만들어진다.  
+### 이말은 기본 골격은 HTML로 만들고 특정 경로로 접근하게되면 next.js 서버에서 우리가 만든 컴포넌트의 props로 경로를 전달해 준다.  
+이때 `generateStaticParams`함수를 사용하게되면 경로를 props로 전달한 다음에 함수에서 명시된 경로의 페이지를 미리 만든다.
+
+
 
