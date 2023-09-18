@@ -124,6 +124,27 @@ export default PantsPage;
 다이나믹 라우트를 사용하는 컴포넌트를 빌드하게 되면 이 `[slug]`페이지는 빌드시에 static 하게 만들어진다.  
 ### 이말은 기본 골격은 HTML로 만들고 특정 경로로 접근하게되면 next.js 서버에서 우리가 만든 컴포넌트의 props로 경로를 전달해 준다.  
 이때 `generateStaticParams`함수를 사용하게되면 경로를 props로 전달한 다음에 함수에서 명시된 경로의 페이지를 미리 만든다.
+  
+### 추가
+![](../public/dynamic6.png)  
+단일 경로 뿐만아니라 동적 라우팅에서 중첩 경로 역시 표현이 가능한데 이때는 `shop/[...slug]` 이런식으로 표현할 수 있다.  
+이렇게 표현하면 위에 그림처럼 shop 이후에 오는 중첩경로들 역시도 동적으로 라우팅할 수 있다.  
+
+![](../public/dynamic7.png)  
+대괄호를 두번 사용하게되면 선택적으로 경로를 라우팅할 수 있다.  
+직 특정 경로가 없다면 기본적인 경로를 라우팅하고 경로가 있다면 동적라우팅을 한다.
 
 
+## next.js 에서 라우팅 구조
+1. page.js : 라우트에 해당하는 기본 UI
+2. layout.js : 재사용 가능한 UI를 생성,내부 상태를 기억
+   1. template.js : layout.js 와 유사하지만, 내부 상태를 기억X
+3. loading.js
+4. error.js
+5. not-found.js  
+  
+## 라우팅 그룹
+![](../public/group.png)  
+위에서 `(marketing)` 경로는 실질적으로 라우팅에는 영향을 주지 않지만 그 하위 경로인 about 과 blog 를 하나의 그룹으로 묶기위한  
+논리적인 구분이다.
 
