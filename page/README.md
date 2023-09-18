@@ -56,3 +56,36 @@ app 이라는 경로를 만들게 되었을까??
 > Type error: Parameter 'props' implicitly has an 'any' type.  
 > npm build 시 타입스크립트 에러 발생  
 > props에 :any 타입을 명시적으로 지정해서 해결
+
+# 동적 라우팅
+static 라우팅이 아닌 동적으로 라우팅을 진행하기 위해서는 next.js 에게 `[]`해당 키워드를 이용해서 동적라우팅임을 명시해 줘야한다.  
+즉, 우리가 build 했을때 고정된 html 파일이 아니라 전체적인 틀은 고정되어있고 특정 키워드에 따라 특정 부분만을 변경하고 싶을때 사용한다.
+![](../public/dynamic.png)  
+`[]`대괄호 안에 키워드는 어떤 값이 오던지 상관없다. 이렇게 동적인 라우팅을 사용하겠다는 `[]` 키워드를 지정해 주면  
+![](../public/dynamic1.png)    
+![](../public/dynamic2.png)  
+위의 사진처럼 `/products2/`뒤에 어떤 uri값과 상관없이 라우팅이 되는 것을 확인할 수 있다.  
+하지만 이때 어떤 경로로 접근했는지를 모른다면 우리가 원하는 라우팅과는 조금 다른 결과일 것이다.  
+따라서 컴포넌트 안에서 우리가 어떤 경로로 접근했는지 확인하는 방법은 **너무나 간단하다.**  
+Next.js 에서 해당 접근 경로를 컴포넌트의 props로 전달해 주기 때문이다.  
+```
+import React from 'react';
+
+type Props = {
+    params: {
+        slug: string;/*만약 동적라우팅이 [item]이라면 itemn:string;*/
+    }
+}
+
+function PantsPage({params}: Props) {
+    return (
+        <div>{params.slug} 제품 설명을 해볼까나??</div>
+    );
+}
+
+export default PantsPage;
+```
+![](../public/dynamic3.png)  
+![](../public/dynamic4.png)  
+build를 한곳을 보면 /product2 경로뒤에는 동적으로 페이지를 생성하기때문에 정적인 페이지가 만들어 지지 않는 것을 볼 수 있다.  
+
