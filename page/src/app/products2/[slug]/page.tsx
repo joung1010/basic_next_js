@@ -1,5 +1,5 @@
 import React from 'react';
-
+import NotFound from '../../not-found'
 type Props = {
     params: {
         slug: string;
@@ -7,6 +7,9 @@ type Props = {
 }
 
 function PantsPage({params}: Props) {
+    if (params.slug === 'noting') {
+        return (<NotFound/>);
+    }
     return (
         <div>{params.slug} 제품 설명을 해볼까나??</div>
     );

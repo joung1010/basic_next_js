@@ -148,3 +148,42 @@ export default PantsPage;
 위에서 `(marketing)` 경로는 실질적으로 라우팅에는 영향을 주지 않지만 그 하위 경로인 about 과 blog 를 하나의 그룹으로 묶기위한  
 논리적인 구분이다.
 
+## not-found.js
+### 13.3 버전 이후
+13 버전 이후에는 `app/not-found.tsx` 해당 경로에 not-found 컴포넌트를 생성하면  
+존재 하지 않는 경로에 접근했을 경우 해당 컴포넌트가 호출된다.  
+만약 not-found 컴포넌트가 존재하지 않는 경우에는 next.js에서 기본으로 제공하는 404페이지가 호출된다.  
+![](../public/notfound.png)
+  
+### 13.3 버전 이전
+`app/not-found.tsx` 해당 경로에 not-found 컴포넌트가 존재하더라도  
+별도로 코드 안에서 직접 `notFound()`를 호출해야지만 우리가 정의한 not-found 컴포넌트가 호출 된다.  
+```
+import Image from 'next/image'
+import styles from './page.module.css'
+import {notFound} from 'next/navigation'
+
+export default function Home() {
+  return (
+      notFound();
+      <h1>Home page</h1>
+  )
+}
+
+```
+  
+13.13 버전 이전 버전에서 기본적인 404페이지를 커스텀하기 위해서는  
+1. app/pages/404.tsx 컴포넌트를 만든다.
+2. app폴더에 [...not-found]폴더를 만들고, not-found.tsx 파일을 만든다.
+   1. [...not-found]를 둔다는 것은 최상위 경로에서 동적라우팅을 받겠다는 뜻이며, 존재하지 않는 경로를 입력할 경우 도메인 이후에 세그먼트들은 모두 [...not-found]폴더의 page파일에 props로 들어가게 될것입니다.
+   2. 그리고 해당 [...not-found] 폴더 안 page파일에서 notFound()를 실행해주면 함수의 특성 상 현 위치부터 not-found파일을 찾기 시작하고 최상위에 not-found.tsx 파일이 존재하므로 해당 파일을 찾아 보여주게됩니다.
+   3. ```
+      import React from 'react';
+      import {notFound} from 'next/navigation'
+      
+      function NotFoundPage() {
+      return notFound();
+      export default NotFoundPage;
+      
+      ```
+
