@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="not-found.js">
-      <change afterPath="$PROJECT_DIR$/page/src/app/layout.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page/src/layout.module.css" afterDir="false" />
+    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="layout.js">
+      <change afterPath="$PROJECT_DIR$/page/src/app/products2/layout.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/src/app/products2/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/page/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,7 @@
       <workItem from="1693819870929" duration="8338000" />
       <workItem from="1693907224113" duration="2293000" />
       <workItem from="1693910692544" duration="341000" />
-      <workItem from="1695029121585" duration="10284000" />
+      <workItem from="1695029121585" duration="11237000" />
     </task>
     <task id="LOCAL-00001" summary="Next.Js란?">
       <created>1693821451653</created>
@@ -208,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695118639436</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="layout.js">
+      <created>1695120829663</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1695120829663</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +252,7 @@
     <MESSAGE value="추가적인 문법" />
     <MESSAGE value="이미지 추가" />
     <MESSAGE value="not-found.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="not-found.js" />
+    <MESSAGE value="layout.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="layout.js" />
   </component>
 </project>
