@@ -187,3 +187,46 @@ export default function Home() {
       
       ```
 
+
+## layout.js 
+다시한번 확인하고 넘어가자면 page.js 컴포넌트는 해당 경로에서 기본적으로 보여주는 UI 컴포넌트이다.  
+layout 컴포넌트 역시 UI 컴포넌트이고 해당 경로뿐만 아니라 하위 경로에서 공유가 가능하다.  
+예시로는 Header, Navbar, Sidebar 등이 있다.  
+  
+기본적으로 next.js 프로젝트에 기본적으로 app 디렉토리의 최상위 경로에 layout.tsx 파일을 확인할 수 있다.  
+![](../public/layout.png)  
+
+layout 컴포넌트를 보면 props로 children이라는 값을 받아오고 있다.  
+![](../public/layout1.png)  
+```
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <header>
+            <h1>Routing Next.js App</h1>
+        </header>
+        <nav>
+            <a href="">About</a>
+            <a href="">Product</a>
+        </nav>
+        {children}
+      </body>
+    </html>
+  )
+}
+```
+![](../public/layout2.png)  
+이렇게 layout 컴포넌트안에 header 를 추가하고 확인해보니  
+우리가 app 경로에 작성했던 UI 들이 우리가 만든 header 밑에 표기 되는것을 확인할 수 있다.  
+이때 다른 경로에 들어가면 어떻게 될까??  
+![](../public/layout3.png)  
+여젼히 최상위에 있는 layout 컴포넌트가 유지 되는 것을 확인할 수 있다.  
+layout 컴포넌트가 정의되어 있다면 이 컴포넌트가 정의되어있는 위치로부터의 존재하는 모든 자식컴포넌트들에게 재사용되어 진다.  
+### 이처럼 특정한 경로에 layout 컴포넌트를 정의해두면 그 경로와 그경로안에 있는 자식 컴포넌트들이 이 layout 컴포넌트 안에서 랜더링이 된다.
+
+

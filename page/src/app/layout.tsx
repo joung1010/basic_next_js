@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import styles from './layout.module.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header className={styles.header}>
+            <h1>Routing Next.js App</h1>
+            <nav>
+                <a href="">About</a>
+                <a href="">Product</a>
+            </nav>
+        </header>
+        {children}
+      </body>
     </html>
   )
 }
