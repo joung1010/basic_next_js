@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './layout.module.css';
-import Link from 'next/link'
+import Link from 'next/link';
 
 function ProductsLayout({children,}: { children: React.ReactNode }) {
     return (
