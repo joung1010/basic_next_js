@@ -371,3 +371,4 @@ export function generateMetadata({params}: Props) {
 }
 ```
 ![](../public/meta2.png)  
+  
