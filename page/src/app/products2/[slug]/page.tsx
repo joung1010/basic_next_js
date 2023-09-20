@@ -6,6 +6,12 @@ type Props = {
     }
 }
 
+export function generateMetadata({params}: Props) {
+    return {
+        title:`제품의 이름은 ${params.slug}`,
+    };
+}
+
 function PantsPage({params}: Props) {
     if (params.slug === 'noting') {
         return (<NotFound/>);

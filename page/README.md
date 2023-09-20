@@ -256,5 +256,118 @@ export default function RootLayout({
   )
 }
 ```
-경로는 app 디렉토리를 루트로 이동하고 싶은 경로를 작성해 나가면 된다.
+경로는 app 디렉토리를 루트로 이동하고 싶은 경로를 작성해 나가면 된다.  
+  
+## SEO
+### Static Metadata
+app/page.tsx 또는 layout.tsx 컴포넌트에  
+```
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: '...',
+  description: '...',
+}
+ 
+export default function Page() {}
+```
+메타 데이터를 import 해주면 된다.
+  
+### Dynamic Metadata
+```
+import type { Metadata, ResolvingMetadata } from 'next'
+ 
+type Props = {
+  params: { id: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+ 
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const id = params.id
+ 
+  // fetch data
+  const product = await fetch(`https://.../${id}`).then((res) => res.json())
+ 
+  // optionally access and extend (rather than replace) parent metadata
+  const previousImages = (await parent).openGraph?.images || []
+ 
+  return {
+    title: product.title,
+    openGraph: {
+      images: ['/some-specific-page-image.jpg', ...previousImages],
+    },
+  }
+}
+ 
+export default function Page({ params, searchParams }: Props) {}
+```
+`generateMetadata()`함수를 이용해서 그안에서 네트워크 통신을 등을 통해서 데이터를 가지고 안다음에  
+title 정보 및 기타 정보들 return 해주면 된다.  
+```
+  const product = await fetch(`https://.../${id}`).then((res) => res.json())
+ 
+  // optionally access and extend (rather than replace) parent metadata
+  const previousImages = (await parent).openGraph?.images || []
+ 
+  return {
+    title: product.title,
+    openGraph: {
+      images: ['/some-specific-page-image.jpg', ...previousImages],
+    },
+  }
+```
+next.js 는 generateMetadata 함수가 완료 된후에 사용자에게 UI를 제공해준다.  
+이때 layout 에서 metadata를 정의하면 그해당 경로의 페이지 뿐만아니라 자식 라우트에서도 재사용이 가능하다.  
+page에 적용하면 page에만 적용이 된다.   
+최상위 layout  
+```
+export const metadata: Metadata = {
+  title: '나이스한 페이지 프로젝트',
+  description: '넥스트js 에서 라우팅을 하는 방법을 공부하고 있어요!!',
+}
+```
+![](../public/meta.png)  
+  
+```
+import React from 'react';
+import styles from './layout.module.css';
+import Link from 'next/link';
+import type { Metadata } from 'next'
 
+export const metadata: Metadata = {
+    title: '나이스한 페이지 프로젝트 | 전체 상품 확인',
+    description: '전체 상품을 확인!!!',
+}
+
+function ProductsLayout({children,}: { children: React.ReactNode }) {
+    return (
+        <>
+            <nav className={styles.nav}>
+                <Link href="/products2/woman">여성 옷</Link>
+                <Link href="/products2/man">남성 옷</Link>
+            </nav>
+            <section>
+                {children}
+            </section>
+        </>
+    );
+}
+
+export default ProductsLayout;
+
+```
+![](../public/meta1.png)  
+이처럼 하위 레이아웃에 meta정보를 추가하면 해당 경로에 접근했을때 meta 정보가 변경되는 것을 확인할 수 있다.  
+  
+```
+export function generateMetadata({params}: Props) {
+    return {
+        title:`제품의 이름은 ${params.slug}`,
+    };
+}
+```
+![](../public/meta2.png)  
