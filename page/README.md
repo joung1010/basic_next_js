@@ -228,5 +228,33 @@ export default function RootLayout({
 여젼히 최상위에 있는 layout 컴포넌트가 유지 되는 것을 확인할 수 있다.  
 layout 컴포넌트가 정의되어 있다면 이 컴포넌트가 정의되어있는 위치로부터의 존재하는 모든 자식컴포넌트들에게 재사용되어 진다.  
 ### 이처럼 특정한 경로에 layout 컴포넌트를 정의해두면 그 경로와 그경로안에 있는 자식 컴포넌트들이 이 layout 컴포넌트 안에서 랜더링이 된다.
+  
+  
+## 링크
+Next.js 에서 내부적으로 다른 곳으로 이동할때는 **a태그**를 사용하는 것이 아니라 `<Link/>`를 사용해야된다.  
+```
+import Link from 'next/link'
 
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <header className={styles.header}>
+            <h1>Routing Next.js App</h1>
+            <nav>
+                <Link href="/about2">About</Link>
+                <Link href="/products2">Product</Link>
+            </nav>
+        </header>
+        {children}
+      </body>
+    </html>
+  )
+}
+```
+경로는 app 디렉토리를 루트로 이동하고 싶은 경로를 작성해 나가면 된다.
 
