@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="metadata" />
+    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="metadata">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/nextJs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/tailwind.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,26 +35,40 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
   <component name="ProjectId" id="2PHU84d4WBw8LlU1AZVHMelBD4p" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/nextJs/rendering",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.haulmont.rcb.storybook" value="false" />
+      </map>
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -61,6 +93,7 @@
       <workItem from="1693907224113" duration="2293000" />
       <workItem from="1693910692544" duration="341000" />
       <workItem from="1695029121585" duration="16365000" />
+      <workItem from="1695289377661" duration="72000" />
     </task>
     <task id="LOCAL-00001" summary="Next.Js란?">
       <created>1693821451653</created>
@@ -253,7 +286,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Next.Js란?" />
