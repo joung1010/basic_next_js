@@ -372,3 +372,13 @@ export function generateMetadata({params}: Props) {
 ```
 ![](../public/meta2.png)  
   
+## Next.js 특징
+앞에서 살펴 봤듯이 Next.js에서는 먼저 사용자에게 보여질 html을 보여준다음에 js 파일을 렌더링한다.  
+이때 우리가 앞에서 사용했던 `Link` 컴포넌트를 사용하게 되면
+![](../public/next.png)  
+우리가 Link 로 설정했던 about과 product에 관한 정보를 가지고 오고있다.  
+이처럼 Link 컴포넌트를 사용하면 사용자에게 보여지는 정적인 페이지에 Link 컴포넌트가 보여진다면 그해당 경로의 페이지를 pre-fetch 한다.  
+따라서 위에 about 과 product를 클릭했을때 서버에 네트워크 요청하지 않고  
+바로 화면에 보여지는 것을 확인할 수 있다.  
+
+
