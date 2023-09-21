@@ -183,3 +183,14 @@ next.js 프로젝트를 다운로드 받으면 이렇게 app 이라는 디렉토
     
 ## 라우팅
 [Next.js 라우팅](./page/README.md)  
+  
+## 렌더링
+[Next.js 렌더링](./rendering/README.md)  
+  
+## 에러
+next.js 에서  
+`Error: Cannot find module 'tailwindcss'`  
+해당 에러가 발생했을때  
+1. npm uninstall autoprefixer postcss tailwindcss
+   1. 먼저 postcss를 제거한후에
+2. [테일윈드 공식사이트](https://tailwindcss.com/docs/guides/nextjs)의 설치 방법을 따라 재성치한다.

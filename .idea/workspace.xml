@@ -1,318 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="metadata">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/nextJs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/next.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/public/next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/public/vercel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/tailwind.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/tsconfig.json" afterDir="false" />
+    <list default="true" id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/about/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/contact/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/layout.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/not-found.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/products/[slug]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/products/layout.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/products/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/products/not-found.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/app/products/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/pages/404.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendering/src/pages/api/hello.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nextJs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nextJs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rendering/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rendering/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rendering/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rendering/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rendering/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rendering/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
-  <component name="ProjectId" id="2PHU84d4WBw8LlU1AZVHMelBD4p" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2VhgAJ5yGdf2MXtiDpVKNqo8KcH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/nextJs/rendering",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
-  <component name="ReactDesignerToolWindowState">
-    <option name="myId2Visible">
-      <map>
-        <entry key="com.haulmont.rcb.reactComponents" value="false" />
-        <entry key="com.haulmont.rcb.reactInspector" value="false" />
-        <entry key="com.haulmont.rcb.storybook" value="false" />
-      </map>
-    </option>
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\nextJs\public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\nextJs\public" />
-    </key>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8acd512b-ebc0-47b3-b414-54bb72f290ec" name="Changes" comment="" />
-      <created>1683113337401</created>
+      <changelist id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="" />
+      <created>1695293587157</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1683113337401</updated>
-      <workItem from="1683113338622" duration="1310000" />
-      <workItem from="1684149298634" duration="771000" />
-      <workItem from="1684321298170" duration="15000" />
-      <workItem from="1693819870929" duration="8338000" />
-      <workItem from="1693907224113" duration="2293000" />
-      <workItem from="1693910692544" duration="341000" />
-      <workItem from="1695029121585" duration="16365000" />
-      <workItem from="1695289377661" duration="72000" />
+      <updated>1695293587157</updated>
+      <workItem from="1695293589413" duration="130000" />
     </task>
-    <task id="LOCAL-00001" summary="Next.Js란?">
-      <created>1693821451653</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1693821451653</updated>
-    </task>
-    <task id="LOCAL-00002" summary="About CSR">
-      <created>1693823736649</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1693823736649</updated>
-    </task>
-    <task id="LOCAL-00003" summary="About SSG">
-      <created>1693824573994</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1693824573994</updated>
-    </task>
-    <task id="LOCAL-00004" summary="About ISR">
-      <created>1693825153099</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1693825153099</updated>
-    </task>
-    <task id="LOCAL-00005" summary="About SSR">
-      <created>1693825895964</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1693825895964</updated>
-    </task>
-    <task id="LOCAL-00006" summary="About Hybrid Rendering">
-      <created>1693826360645</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1693826360645</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Hydration">
-      <created>1693828169297</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1693828169297</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Next.js 설치">
-      <created>1693909899064</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1693909899064</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Next.js 설치 원복">
-      <created>1693910367638</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1693910367638</updated>
-    </task>
-    <task id="LOCAL-00010" summary="실행 명령어">
-      <created>1693912678199</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1693912678199</updated>
-    </task>
-    <task id="LOCAL-00011" summary="note 프로젝트 init">
-      <created>1693995077730</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1693995077730</updated>
-    </task>
-    <task id="LOCAL-00012" summary="프로젝트 init">
-      <created>1694000354856</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1694000354856</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Next.js Page 라우팅방법(12버전)">
-      <created>1694000924099</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1694000924099</updated>
-    </task>
-    <task id="LOCAL-00014" summary="README 수정">
-      <created>1694001081832</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1694001081832</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Next.js Page 라우팅방법(13버전)">
-      <created>1694080645058</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1694080645058</updated>
-    </task>
-    <task id="LOCAL-00016" summary="next.js dynamic routing">
-      <created>1695032149768</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1695032149768</updated>
-    </task>
-    <task id="LOCAL-00017" summary="동적 라우팅에서 특정 페이지 미리 만들기">
-      <created>1695033418169</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1695033418169</updated>
-    </task>
-    <task id="LOCAL-00018" summary="추가적인 문법">
-      <created>1695035241535</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1695035241535</updated>
-    </task>
-    <task id="LOCAL-00019" summary="이미지 추가">
-      <created>1695035253957</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1695035253957</updated>
-    </task>
-    <task id="LOCAL-00020" summary="not-found.js">
-      <created>1695118639436</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1695118639436</updated>
-    </task>
-    <task id="LOCAL-00021" summary="layout.js">
-      <created>1695120829663</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1695120829663</updated>
-    </task>
-    <task id="LOCAL-00022" summary="layout.js2">
-      <created>1695121865397</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1695121865397</updated>
-    </task>
-    <task id="LOCAL-00023" summary="nextjs Link">
-      <created>1695203854898</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1695203854898</updated>
-    </task>
-    <task id="LOCAL-00024" summary="nextjs Link2">
-      <created>1695204780074</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1695204780074</updated>
-    </task>
-    <task id="LOCAL-00025" summary="metadata">
-      <created>1695207941924</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1695207941924</updated>
-    </task>
-    <option name="localTasksCounter" value="26" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Next.Js란?" />
-    <MESSAGE value="About CSR" />
-    <MESSAGE value="About SSG" />
-    <MESSAGE value="About ISR" />
-    <MESSAGE value="About SSR" />
-    <MESSAGE value="About Hybrid Rendering" />
-    <MESSAGE value="Hydration" />
-    <MESSAGE value="Next.js 설치" />
-    <MESSAGE value="Next.js 설치 원복" />
-    <MESSAGE value="실행 명령어" />
-    <MESSAGE value="note 프로젝트 init" />
-    <MESSAGE value="프로젝트 init" />
-    <MESSAGE value="Next.js Page 라우팅방법(12버전)" />
-    <MESSAGE value="README 수정" />
-    <MESSAGE value="Next.js Page 라우팅방법(13버전)" />
-    <MESSAGE value="next.js dynamic routing" />
-    <MESSAGE value="동적 라우팅에서 특정 페이지 미리 만들기" />
-    <MESSAGE value="추가적인 문법" />
-    <MESSAGE value="이미지 추가" />
-    <MESSAGE value="not-found.js" />
-    <MESSAGE value="layout.js" />
-    <MESSAGE value="layout.js2" />
-    <MESSAGE value="nextjs Link" />
-    <MESSAGE value="nextjs Link2" />
-    <MESSAGE value="metadata" />
-    <option name="LAST_COMMIT_MESSAGE" value="metadata" />
   </component>
 </project>
