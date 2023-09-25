@@ -1,35 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/about/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/contact/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/layout.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/not-found.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/products/[slug]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/products/layout.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/products/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/products/not-found.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/app/products/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/pages/404.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rendering/src/pages/api/hello.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nextJs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nextJs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rendering/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rendering/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rendering/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rendering/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rendering/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rendering/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rendering/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rendering/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rendering/src/components/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/src/components/Counter.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +33,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,8 +47,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695293587157</updated>
-      <workItem from="1695293589413" duration="130000" />
+      <workItem from="1695293589413" duration="888000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/rendering/tailwind.config.js" />
+      </list>
+    </option>
   </component>
 </project>

@@ -2,6 +2,7 @@
 import React, {useState} from 'react';
 
 function Counter() {
+    console.log('Hello!! Client Component')
     const [count, setCount] = useState(0);
     return (
         <>

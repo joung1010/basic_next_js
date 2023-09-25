@@ -91,6 +91,31 @@ export default Counter;
 ```
 기본적으로는 Server Component 이기 때문에 Next.js에게 해당 Component는 Client Component라고 명시('use client') 해주어야 한다.  
 
+# 동작 원리
+![sc](../public/cw.png)  
+빌드시 진행되는 메세지를 확인해 보면 ServerComponent와 Client Component 모두 출력되는 것을 확인할 수 있다.  
+근데 왜 Client Component가 서버에서 실행되었을까??  
+![sc](../public/cw1.png)  
+처음로 다운받은 정적인 페이지를 확인해보면 우리가 만든 Client Component도 포함되어 있는 것을 확인할 수 있는데  
+이는 Client Component는 무조건 Client Side Rendering이 된다는 말이 아니다.  
+즉, **브라우저에서 처리해야하는 코드를 Client Component라고 하고 이 작성된 코드가 Client에 보내지는게 Client Component라고 파악할 수 있다.**  
+  
+처음으로 받아온 이 정적인 HTML 페이지에는 Client Component안에 있는 정적인 데이터가 포함되어 있지만  
+![sc](../public/cw3.gif)  
+이 HTML 상에서 click 이벤트는 처리되지 않는 것을 확인할 수 있다.  
+Next.js에서 자체적으로 Component를 하나하나 확인하면서 HTML 파일로 만들 수 있는 부분을 HTML 파일로 만든다.  
+그렇기 때문에 Build 시에 Client Component가 실행된 것이다.  
+이렇게 먼저 브라우저에게 정적인 HTML파일 먼저 전달한 다음에 이벤트가 처리되기 위해서는 `Hydration`이 일어나야 한다.  
+정적인 HTML 페이지만으로는 이벤트를 처리할 수 없기때문에 그뒤에 실행하기위해 필요한 React 및 JS 파일이 다운로드 받아진뒤  
+실행이 되어서 실제로 Component로 렌더링이 되어야지(React Component로 Hydration)만 브라우저에서 Click 이벤트를 처리할 수 있다.  
+![sc](../public/sw4.png)  
+  
+**13버전 이후에서는 페이지 전체 코드가 Client측으로 가는 것이 아니라 Server Component는 서버상에서 실행된 상태로 있고  
+Client Component의 코드만 Client측으로 보내진다.**  
+그렇기 때문에 실제 번들링된 JS코드의 양이 줄어 들게 된다.  
+> 12버전에서는 페이지단위로 처리
+  
+
 
 
 
