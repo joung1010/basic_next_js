@@ -4,29 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a80b6e16-4de2-4e74-b451-65ace91242e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/layout.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/not-found.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/products/[slug]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/products/layout.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/products/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/products/not-found.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/products/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/404.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/api/hello.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/nextJs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/nextJs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+    <list default="true" id="a80b6e16-4de2-4e74-b451-65ace91242e9" name="Changes" comment="rendering project init2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,8 +61,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695292753575</updated>
-      <workItem from="1695292755450" duration="1072000" />
+      <workItem from="1695292755450" duration="3306000" />
     </task>
+    <task id="LOCAL-00001" summary="rendering project init2">
+      <option name="closed" value="true" />
+      <created>1695293873961</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695293873961</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,5 +81,9 @@
         <option value="$PROJECT_DIR$/tailwind.config.js" />
       </list>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rendering project init2" />
+    <option name="LAST_COMMIT_MESSAGE" value="rendering project init2" />
   </component>
 </project>
