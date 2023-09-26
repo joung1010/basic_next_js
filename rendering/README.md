@@ -68,7 +68,7 @@ export default function Home() {
   
 # Client Component
 Server Component는 서버에서 동작하기 때문에 브라우저에서 발생하는 일,  
-예를들어, 사용자의 클릭을 처리,상태 값,useEffect()등 브라우저에서만 할 수 있는 일은 Server Component에서는 할 수 없다.  
+예를들어, 사용자의 클릭을 처리,상태 값,useEffect(),useState(), useReducer()등 브라우저에서만 할 수 있는 일은 Server Component에서는 할 수 없다.  
   
 그래서 **우리가 사용자의 Event를 처리한다는 등 이러한 작업을 처리하기 위해서 Client Component를 만들어야한다.**  
 이때 페이지 전체를 Client Component로 만든다면 Next.js를 사용하는 의미가 없어진다.  
@@ -115,6 +115,12 @@ Client Component의 코드만 Client측으로 보내진다.**
 그렇기 때문에 실제 번들링된 JS코드의 양이 줄어 들게 된다.  
 > 12버전에서는 페이지단위로 처리
   
+### 추가
+React 18버전 이전에는 Server Component가 지원되지 않았기 때문에  
+Next.js 에서는 **페이지**단위로 미리 렌더링을 진행하여 생성된 HTML 파일을 client 측으로 전달하고 Hydration이 진행된다.  
+이러한 방식은 client측에서 전달해야하는 Javascript 코드가 증가하게되서 번들링하는데 있어서 문제를 발생시켰다.  
+  
+
 
 
 
