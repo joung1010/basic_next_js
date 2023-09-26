@@ -120,6 +120,20 @@ React 18버전 이전에는 Server Component가 지원되지 않았기 때문에
 Next.js 에서는 **페이지**단위로 미리 렌더링을 진행하여 생성된 HTML 파일을 client 측으로 전달하고 Hydration이 진행된다.  
 이러한 방식은 client측에서 전달해야하는 Javascript 코드가 증가하게되서 번들링하는데 있어서 문제를 발생시켰다.  
   
+## ISR 렌더링
+기본적으로는 SSG로 동작하지만 revalidate 키워드를 추가하면 ISR 렌더링을 할 수 있다.  
+page.js 나 layout.js 에서  
+```
+export const revalidate = 3600 // revalidate at most every hour
+                              // 0초면 SSR처럼 요청이 올때마다 렌더링
+```
+키워드를 추가하면 된다.  
+이렇게 추가한 다음에 파일의 값을 변경해보면  
+![sc](../public/prt.png)  
+![sc](../public/prt2.png)  
+3초뒤에 데이터가 변경된 것을 확인할 수 있다.  
+이처럼 revalidate를 사용하면 특정한 주기마다 렌더링을 다시 수행하는 것을 확인할 수 있다.
+
 
 
 

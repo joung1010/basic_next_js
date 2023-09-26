@@ -12,7 +12,7 @@ export function generateMetadata({params}: Props) {
         title: `제품의 이름: ${params.slug}`,
     };
 }
-
+export const revalidate = 3;
 export default async function ProductPage({params: {slug}}: Props) {
     const product = await getProduct(slug);
     if (!product) {
