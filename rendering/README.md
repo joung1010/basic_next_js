@@ -145,7 +145,7 @@ const factText = data.data[0];
 이와 같이 API를 이용해서 데이터를 받아와서 화면에 보여주고 싶다.
 ![sc](../public/fetch1.png)  
 하지만 이때 해당 화면에서 새로고침을해도 항상같은 데이터만 보여주고 있는데  
-이는 build할때 해당 API가 호출되고 그 이후에는 호출되지 않기때문이다.  
+이는 build할때 해당 API가 호출되고 그 이후에는 호출되지 않기때문이다(SSG).  
 따라서 fetch 할때 revalidate 옵션을 추가해서 특정 주기마다 새롭게 호출하도록 변경해야한다.  
 ```
 const res = await fetch('https://meowfacts.herokuapp.com/',{next:{revalidate:3}});
