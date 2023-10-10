@@ -163,7 +163,35 @@ const res = await fetch('https://meowfacts.herokuapp.com/',{cache:'no-store'});
 `cache:'no-store'`옵션도 SSR처럼 작동한다.
 
 
+## CSR
+우리가 fetch해서 데이터를 가져오는데 해당 정보가 SSG라면 해당 정보가 변경되지 않고  
+그렇다고 SSR으로 만들자니 서버에 과부화를 줄 것 같다.  
+이럴때 페이지에 있기는 하지만 중요도가 다른 컨텐츠에 보다 중요도가 낮은 경우  
+즉, 나중에 렌더링 되도 상관 없는 경우 이런한 부분을 CSR로 만들면 보다 효율적인 웹 어플리케이션을 만들 수 있다.  
+즉, 사용자가 방문했을때 그때 데이터를 받아오고 싶다면 해당 로직이 서버 컴포넌트에서 동작하면 안된다.  
+```
+'use client';
+import React, {useEffect, useState} from 'react';
+import styles from "./MeowArticle.module.css";
 
+async function Article() {
+    const [text, setText] = useState('');
+    useEffect(() => {
+        const res = fetch('https://meowfacts.herokuapp.com')
+            .then(res => res.json())
+            .then(data => {
+                setText(data.data[0])
+            });
+    }, []);
+
+
+    return (
+        <article className={styles.article}>{text}</article>
+    );
+}
+
+export default MeowArticle;
+```
 
 
 
