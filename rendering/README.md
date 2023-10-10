@@ -132,8 +132,31 @@ export const revalidate = 3600 // revalidate at most every hour
 ![sc](../public/prt.png)  
 ![sc](../public/prt2.png)  
 3초뒤에 데이터가 변경된 것을 확인할 수 있다.  
-이처럼 revalidate를 사용하면 특정한 주기마다 렌더링을 다시 수행하는 것을 확인할 수 있다.
-
+이처럼 revalidate를 사용하면 특정한 주기마다 렌더링을 다시 수행하는 것을 확인할 수 있다.  
+  
+### 다른 API
+우리의 서버외에 다른 API를 이용해서 데이터를 가공해야하는 경우가 상당히 비번하게 발생한다.  
+이때  
+```
+const res = await fetch('https://meowfacts.herokuapp.com/');
+const data = await res.json();
+const factText = data.data[0];
+```
+이와 같이 API를 이용해서 데이터를 받아와서 화면에 보여주고 싶다.
+![sc](../public/fetch1.png)  
+하지만 이때 해당 화면에서 새로고침을해도 항상같은 데이터만 보여주고 있는데  
+이는 build할때 해당 API가 호출되고 그 이후에는 호출되지 않기때문이다.  
+따라서 fetch 할때 revalidate 옵션을 추가해서 특정 주기마다 새롭게 호출하도록 변경해야한다.  
+```
+const res = await fetch('https://meowfacts.herokuapp.com/',{next:{revalidate:3}});
+```
+이렇게 지정해주면 Next.js 에서 자동으로 해당 렌더링을 ISR로 변경해준다.  
+이때 revalidate 를 0으로 하게되면 요청할때마다 화면을 다시 만들어서 내려주는 SSR방식으로 작동한다.  
+혹은  
+```
+const res = await fetch('https://meowfacts.herokuapp.com/',{cache:'no-store'});
+```
+`cache:'no-store'`옵션도 SSR처럼 작동한다.
 
 
 
