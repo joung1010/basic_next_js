@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a80b6e16-4de2-4e74-b451-65ace91242e9" name="Changes" comment=" fetch 를이용한 SSG,ISR,SSR3">
-      <change afterPath="$PROJECT_DIR$/src/components/article/MeowArticle.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/article/MeowArticle.tsx" afterDir="false" />
+    <list default="true" id="a80b6e16-4de2-4e74-b451-65ace91242e9" name="Changes" comment=" fetch 를이용한 CSR">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/products/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +49,7 @@
       <map>
         <entry key="com.haulmont.rcb.reactComponents" value="false" />
         <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.haulmont.rcb.storybook" value="false" />
       </map>
     </option>
   </component>
@@ -69,7 +67,8 @@
       <option name="presentableId" value="Default" />
       <updated>1695292753575</updated>
       <workItem from="1695292755450" duration="14840000" />
-      <workItem from="1696930045137" duration="4338000" />
+      <workItem from="1696930045137" duration="5246000" />
+      <workItem from="1697016634452" duration="833000" />
     </task>
     <task id="LOCAL-00001" summary="rendering project init2">
       <option name="closed" value="true" />
@@ -159,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696933262211</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary=" fetch 를이용한 CSR">
+      <option name="closed" value="true" />
+      <created>1696935257512</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1696935257512</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +189,7 @@
     <MESSAGE value=" fetch 를이용한 SSG,ISR,SSR" />
     <MESSAGE value=" fetch 를이용한 SSG,ISR,SSR2" />
     <MESSAGE value=" fetch 를이용한 SSG,ISR,SSR3" />
-    <option name="LAST_COMMIT_MESSAGE" value=" fetch 를이용한 SSG,ISR,SSR3" />
+    <MESSAGE value=" fetch 를이용한 CSR" />
+    <option name="LAST_COMMIT_MESSAGE" value=" fetch 를이용한 CSR" />
   </component>
 </project>

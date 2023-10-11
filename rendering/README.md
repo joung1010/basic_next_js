@@ -19,7 +19,7 @@ React.js에서 18전 이후부터  Next.js 와 같이 SSR이 가능한 프레임
 ### 컴포넌트 단위로 렌더링 방식을 규정  
 한 페이지 안에서도 `Server Component`,`Client Component` 혼합하여 보다 효율적으로 웹페이지를 구성할 수 있게 되었다.  
   
-# Server Component
+# Server Component(V13)
 app 디렉토리 안에 있는 Component는 기본적으로 모두 Server Component 이다.  
 이를 확인하기 위해서 간단하게 `console.log`로 확인이 가능하다.  
 ```
@@ -191,7 +191,22 @@ async function Article() {
 }
 
 export default MeowArticle;
-```
+```  
+  
+## 정리
+[Data Fetching 공식문서](https://nextjs.org/docs/app/building-your-application/data-fetching)  
+데이터 Fetching을 서버에서 진행하는 것을 Next.js 공식 사이트에서는 추천하고 있다.  
+그 이유는  
+1. Backend resources(ex DB)에 직접적으로 접근할 수 있다.
+2. 토큰이나 API Key 와 같은 보안에 민감한 데이터를 Client쪽에 노출시키지 않을 수 있다.
+3. 데이터를 Fetching 하는 것과 렌더링을 동일 환경에서 처리할 수 있다.
+4. client 측에서 화면을 만들기위해 여러번 서버측에 요청할 필요가 없다.
+5. 서버와 데이터가 동일한 곳에 있기때문에 성능적인 측면에서 보다 효율적이다.  
+  
+또한 동일한 layout 안에서 동일한 fetch가 여러번 발생하는 경우 Neaxt.js에서 자동적으로 중복을 제거해준다.  
+단, Post 요청에 대해서는 자동으로 중복제거를 해주지 않는다.
+
+
 
 
 
