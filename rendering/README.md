@@ -6,8 +6,60 @@
 즉 어떤 함수를 사용함에 따라 렌더링 방식을 결정할 수 있었다.  
 `getStaticProps()` 함수에서 특정 주기를 설정하여  
 페이지를 계속 렌더링하게 만들어 ISR(Incremental Static Regeneration)를 사용할 수도 있었다.  
+
+#### 이 모든 것들이 페이지 단위로 규정되어 있었다.  
+
+### SSG
+```
+import React from 'react';
+import {getProducts, Product} from "@/service/products/products";
+import Link from "next/link";
+import MeowArticle from "@/components/article/MeowArticle";
+
+type Props = {
+    products: Product[];
+}
+
+function Ssg({products}:Props) {
+    return (
+        <>
+            <h1>제품 소개 페이지!</h1>
+            <ul>
+                {products.map((product, index) => (
+                    <li key={index}>
+                        <Link href={`/products/${product.id}`}>{product.name}</Link>
+                    </li>
+                ))}
+            </ul>
+            <MeowArticle/>
+        </>
+    );
+}
+
+export async function getStaticProps() {
+    const products = await getProducts();
+    return {
+        props: {products},
+        revalidate:10,
+    };
+}
+
+export default Ssg;
+```
   
-### 이 모든 것들이 페이지 단위로 규정되어 있었다.
+V12에서는 Client Side Component 나 Server Component를 구분할 필요 없이  
+![sc](../public/v12CS.png)  
+해당 코드부분이 Client Side에서 실행이 될것이고
+![sc](../public/v12CS1.png)  
+위의 코드와 같이 `getStaticProps`같은 Next.js에서 제공하는 함수들은 Server에서 실행된다.  
+  
+#### 즉 V12 에서는 Component는 Clinet Side에서 동작하고 Next.js에서 제공하는 함수들은 서버에서 동작한다. 이때 Server Fetching한 데이터를 Component에 전달하고 싶다면 props형태로 전달한다. 
+  
+  
+### SSR
+SSR 렌더링은 Component를 만드는 로직은 동일하지만 props를 전달하는 next.js 함수만 달라진다.  
+![sc](../public/v12SR.png)
+
   
 ## V13
 페이지 단위로 특정 렌더링 방식을 규정하는 것이 아니라  
@@ -19,7 +71,7 @@ React.js에서 18전 이후부터  Next.js 와 같이 SSR이 가능한 프레임
 ### 컴포넌트 단위로 렌더링 방식을 규정  
 한 페이지 안에서도 `Server Component`,`Client Component` 혼합하여 보다 효율적으로 웹페이지를 구성할 수 있게 되었다.  
   
-# Server Component(V13)
+# Server Component
 app 디렉토리 안에 있는 Component는 기본적으로 모두 Server Component 이다.  
 이를 확인하기 위해서 간단하게 `console.log`로 확인이 가능하다.  
 ```

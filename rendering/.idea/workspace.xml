@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a80b6e16-4de2-4e74-b451-65ace91242e9" name="Changes" comment=" fetch 를이용한 CSR">
+    <list default="true" id="a80b6e16-4de2-4e74-b451-65ace91242e9" name="Changes" comment=" 공식 사이트 정리">
+      <change afterPath="$PROJECT_DIR$/src/pages/ssg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ssr.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -68,7 +70,7 @@
       <updated>1695292753575</updated>
       <workItem from="1695292755450" duration="14840000" />
       <workItem from="1696930045137" duration="5246000" />
-      <workItem from="1697016634452" duration="833000" />
+      <workItem from="1697016634452" duration="2914000" />
     </task>
     <task id="LOCAL-00001" summary="rendering project init2">
       <option name="closed" value="true" />
@@ -166,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696935257512</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=" 공식 사이트 정리">
+      <option name="closed" value="true" />
+      <created>1697017632799</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1697017632799</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +200,7 @@
     <MESSAGE value=" fetch 를이용한 SSG,ISR,SSR2" />
     <MESSAGE value=" fetch 를이용한 SSG,ISR,SSR3" />
     <MESSAGE value=" fetch 를이용한 CSR" />
-    <option name="LAST_COMMIT_MESSAGE" value=" fetch 를이용한 CSR" />
+    <MESSAGE value=" 공식 사이트 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value=" 공식 사이트 정리" />
   </component>
 </project>
