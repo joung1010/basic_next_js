@@ -96,6 +96,7 @@ export default function handler(
 ### V13
 V13 부터는 app 디렉토리안에 api 디렉토리를 이용해서 라우팅이 가능해졌다.  
 요청 경로에 따라 GET,POST.. 와같이 HTTP Method 형태로 구분이 가능해졌다.  
+![](../../public/api3.png)
 ```
 export async function GET(request: Request) {}
 
@@ -110,7 +111,31 @@ export async function GET() {
  
   return Response.json({ data })
 }
+
+
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url)
+  const id = searchParams.get('id')
+  const res = await fetch(`https://data.mongodb-api.com/product/${id}`, {
+    headers: {
+      'Content-Type': 'application/json',
+      'API-Key': process.env.DATA_API_KEY,
+    },
+  })
+  const product = await res.json()
+ 
+  return Response.json({ product })
+}
 ```
+예제)  
+```
+export async function GET(request: Request) {
+    const products =await getProducts();
+    return Response.json({products});
+}
+```
+![](../../public/api4.png)
+
 
 ```
 export async function POST() {
