@@ -187,6 +187,8 @@ next.js 프로젝트를 다운로드 받으면 이렇게 app 이라는 디렉토
 ## 렌더링
 [Next.js 렌더링](./rendering/README.md)  
   
+## API 라우터
+[Next.js 렌더링](./rendering/route/README.md)
 ## 에러
 next.js 에서  
 `Error: Cannot find module 'tailwindcss'`  
