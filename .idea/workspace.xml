@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/rendering/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rendering/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rendering/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rendering/src/components/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/src/components/Counter.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="API 라우터 추가" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,23 +16,43 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
   <component name="ProjectId" id="2VhgAJ5yGdf2MXtiDpVKNqo8KcH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/nextJs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.haulmont.rcb.storybook" value="false" />
+      </map>
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -48,7 +63,17 @@
       <option name="presentableId" value="Default" />
       <updated>1695293587157</updated>
       <workItem from="1695293589413" duration="888000" />
+      <workItem from="1697104103091" duration="303000" />
     </task>
+    <task id="LOCAL-00001" summary="API 라우터 추가">
+      <option name="closed" value="true" />
+      <created>1697104400358</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697104400358</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -58,5 +83,9 @@
         <option value="$PROJECT_DIR$/rendering/tailwind.config.js" />
       </list>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="API 라우터 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="API 라우터 추가" />
   </component>
 </project>

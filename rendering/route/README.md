@@ -60,3 +60,57 @@ export default function handler(
         message: 'Hello, World!',
       });
       ```
+      
+  
+V12에 불편한점중 하나는 HTTP Method를 구분할 수 없다는 것이다.  
+만약 요청을 구분하고 싶다면  
+```
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<Data>
+) {
+  if (req.method === 'GET') {
+    
+  }
+  res.status(200).json({name: 'John Doe'});
+}
+```
+이런식으로 함수 내부에서 요청문을 구분해서 처리해야만 한다.  
+  
+## V13
+V13 부터는 app 디렉토리안에 api 디렉토리를 이용해서 라우팅이 가능해졌다.  
+요청 경로에 따라 GET,POST.. 와같이 HTTP Method 형태로 구분이 가능해졌다.  
+```
+export async function GET(request: Request) {}
+
+export async function GET() {
+  const res = await fetch('https://data.mongodb-api.com/...', {
+    headers: {
+      'Content-Type': 'application/json',
+      'API-Key': process.env.DATA_API_KEY,
+    },
+  })
+  const data = await res.json()
+ 
+  return Response.json({ data })
+}
+```
+
+```
+export async function POST() {
+  const res = await fetch('https://data.mongodb-api.com/...', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'API-Key': process.env.DATA_API_KEY,
+    },
+    body: JSON.stringify({ time: new Date().toISOString() }),
+  })
+ 
+  const data = await res.json()
+ 
+  return Response.json(data)
+}
+```
+
+[라우트 핸들러 공식문서](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
