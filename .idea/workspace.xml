@@ -5,31 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="API 라우터 추가">
-      <change afterPath="$PROJECT_DIR$/ui/src/app/about/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/app/api/products/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/app/contact/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/app/layout.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/app/not-found.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/app/page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/app/products/[slug]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/app/products/layout.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/app/products/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/app/products/not-found.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/app/products/page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/app/products/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/components/Counter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/components/article/MeowArticle.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/components/article/MeowArticle.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/pages/404.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/pages/api/hello.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/pages/api/product/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/pages/ssg.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/pages/ssr.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/service/products/products.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rendering/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rendering/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,14 +25,25 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2VhgAJ5yGdf2MXtiDpVKNqo8KcH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/nextJs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -77,6 +65,7 @@
       <workItem from="1697104103091" duration="303000" />
       <workItem from="1697448824771" duration="140000" />
       <workItem from="1697449857843" duration="4000" />
+      <workItem from="1697501248919" duration="48000" />
     </task>
     <task id="LOCAL-00001" summary="API 라우터 추가">
       <option name="closed" value="true" />

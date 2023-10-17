@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a80b6e16-4de2-4e74-b451-65ace91242e9" name="Changes" comment=" API 라우터3(V13)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="a80b6e16-4de2-4e74-b451-65ace91242e9" name="Changes" comment=" API 라우터3(V13)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
