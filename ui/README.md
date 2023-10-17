@@ -124,3 +124,60 @@ export default async function Page({
 
 
 
+## error.js
+error.js는 기본적으로 `React Error Boundary`를 이용해서 동작한다.  
+>[React Error Boundary](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary)는 자식 컴포넌트에서 발생되는 에러를 **catch**하여 특정 UI 메세지를 제공해준다.
+  
+이 error.js 에도 loading.js 와 유사하게 특정 라우터 별로 error 를 표기할 수 있는 UI 컴퍼넌트 이다.
+![](../public/error-special-file.png)  
+출처:https://nextjs.org/  
+  
+
+  
+사용: 이떄 반드시 Client Component 로 만들어야한다.
+```
+'use client' // Error components must be Client Components
+ 
+import { useEffect } from 'react'
+ 
+export default function Error({
+  error,
+  reset,
+}: {
+  error: Error & { digest?: string }
+  reset: () => void
+}) {
+  useEffect(() => {
+    // Log the error to an error reporting service
+    console.error(error)
+  }, [error])
+ 
+  return (
+    <div>
+      <h2>Something went wrong!</h2>
+      <button
+        onClick={
+          // Attempt to recover by trying to re-render the segment
+          () => reset()
+        }
+      >
+        Try again
+      </button>
+    </div>
+  )
+}
+```
+  
+이떄 Error 컴퍼넌트 파라미터로 에러 메세지와 페이지를 다시 reset할 수 있는 callback 함수를 전달 받는다.  
+![](../public/err.png)  
+
+### 동작원리
+내부적으로 `React Error Boundary`를 이용해서 해당 컴퍼넌트를 감싸면서 동작하고 있다.  
+![](../public/error-overview.png)  
+출처:https://nextjs.org/  
+
+또한 loading.js 와 마찬가지로 `<Error Boundary>` 컴퍼넌트를 이용해서 직접 정의할 수 있다.  
+  
+### 참고  
+만약 하위 라우터에서 에러가 정의되지 않았다면 그 상위경로로 이동해서 error.js가 정의되어 있는지를 찾아 올라간다.  
+따라서 가장 근접한 곳의 error.js를 보여주고 없다면 그 상위 error.js를 찾아 올라간다 
