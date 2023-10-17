@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a80b6e16-4de2-4e74-b451-65ace91242e9" name="Changes" comment=" API 라우터3(V13)">
-      <change afterPath="$PROJECT_DIR$/../public/loading.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/loading2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ui/src/app/products/loading.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ui/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/README.md" afterDir="false" />
     </list>
@@ -81,7 +78,7 @@
       <workItem from="1697016634452" duration="4058000" />
       <workItem from="1697102910658" duration="3806000" />
       <workItem from="1697448831580" duration="2348000" />
-      <workItem from="1697497952880" duration="699000" />
+      <workItem from="1697497952880" duration="813000" />
     </task>
     <task id="LOCAL-00001" summary="rendering project init2">
       <option name="closed" value="true" />
