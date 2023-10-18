@@ -301,3 +301,34 @@ export default function RootLayout({
 ```
 [next.js 폰트 공식사이트](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)
 
+## Redirect
+로그인을 안한 사용자를 로그인 페이지로 이동시킨다는 것과 같이 특정 페이지로 보내는 것을 말하는데  
+next.js 에서는 next.config.js 파일을 통해서 이를 간단하게 설정할 수 있다.  
+```
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    async redirects() {
+        return [
+            {
+                source: '/products/deleted_forever',
+                destination:'/products',
+                permanent:true,
+            },
+            {
+                source: '/products/deleted_tmp',
+                destination:'/products',
+                permanent:false,
+            }
+        ]
+    },
+}
+
+module.exports = nextConfig
+
+```
+우리가 redirect 배열을 return 해주면 된다.  
+>redirects()  
+> 함수는 배열 형태로 리디렉션 규칙을 반환합니다. 각 규칙은 `source`와 `destination`, 그리고 `permanent` 프로퍼티로 구성됩니다.  
+> - `source`: 원래의 URL 경로를 나타냅니다.
+> - `destination`: 리디렉션 후 이동할 URL 경로를 나타냅니다.
+> - `permanent`: 리디렉션의 유형을 나타내며, `true`이면 영구 리디렉션(301 Redirect)을 의미하고, `false`이면 일시적인 리디렉션(302 Redirect)을 의미합니다.
