@@ -249,4 +249,55 @@ next.js 에서 제공해주는 `Image` 컴퍼넌트를 사용하면 이미지 �
 이미지 사이즈를 지정해주면 지정한 공간만큼 미리 html에 만들어 두기때문에 이미지가 다운로드되기전과 다운로드된 후에  
 이미지가 차지하는 공간이 변하지 않기때문에 이러한 사이즈변화로 발생하는 layout shift가 발생하지 않는다.  
 #### 즉 불필요하게 html을 다시 렌더링하지 않는다.
+  
+## 폰트
+next.js 에서는 자동적으로 폰트 최적화를 해준다.  
+이는 self-hoisting 방식으로 폰트 파일을 제공하고 내부적으로 CSS size-adjust 를 사용한다. 이를 통해서 layout shift 발생을 방지한다.  
+예를 들어 구글 폰트를 사용한다면 빌드 시간에 해당 CSS 와 폰트 파일을 다운로드 받은후에   
+self-hosted 방식으로 static하게 지원하기 때문에 브라우저에서 구글로 요청을 보낼 필요가 없다.  
+사용법:  
+```
+import { Inter } from 'next/font/google'
+ 
+// If loading a variable font, you don't need to specify the font weight
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
+ 
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en" className={inter.className}>
+      <body>{children}</body>
+    </html>
+  )
+}
+```
+
+```
+import { Roboto } from 'next/font/google'
+ 
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
+ 
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en" className={roboto.className}>
+      <body>{children}</body>
+    </html>
+  )
+}
+```
+[next.js 폰트 공식사이트](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)
 
