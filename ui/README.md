@@ -181,3 +181,72 @@ export default function Error({
 ### 참고  
 만약 하위 라우터에서 에러가 정의되지 않았다면 그 상위경로로 이동해서 error.js가 정의되어 있는지를 찾아 올라간다.  
 따라서 가장 근접한 곳의 error.js를 보여주고 없다면 그 상위 error.js를 찾아 올라간다 
+  
+  
+## 이미지  
+### 프로젝트 서버에 있는 이미지
+프로젝트 내에서 이미지를 사용할때 next.js 에서 html 이미지 테그를 사용하는 것이 아니라  
+next.js에서 제공하는 `<Image>` 컴퍼넌트를 사용하면 된다.  
+사용하는 방법은 이미지 테그를 사용하는 것과 동일히다.  
+이때 사용할때 경로를 사용해도 되지만 이미지를 static 하게 import해서 사용하는 것이 더 좋다.  
+```
+import Image from "next/image";
+import clothImage from '../../../public/images/clothes.jpg';
+
+<Image src={clothImage} alt='Clothes'/>
+
+```
+실제 화면에서 표시되는 이미지테그 정보를 확인해보면 실제 우리가 프로젝트에서 가지고 있는 파일크기가 더 크다는 것을 알 수 있다.  
+또한  
+```
+<img alt="Clothes" loading="lazy" width="500" height="333" decoding="async" data-nimg="1" style="color:transparent" srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fclothes.08a4a46d.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fclothes.08a4a46d.jpg&amp;w=1080&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fclothes.08a4a46d.jpg&amp;w=1080&amp;q=75">
+```
+이미지 정보를 확인해보면 화면 사이즈별로 사진이 최적화 되어 있는 것을 알 수 있다.
+![](../public/img.png)  
+  
+#### 즉, 일반 이미지 테그를 사용하는 것보다 사진 크기나 사이즈 별렬로 최적화하는 작업등 next.js 이미지 컴퍼넌트가 자동으로 이미지 리소스를 최적화 해준다.
+  
+  
+### 다른 서버에 있는 이미지(URL)
+```
+<Image src='https://images.unsplash.com/photo-1441986300917-64674bd600d8' alt='shop'/>
+```
+![](../public/img2.png)  
+이런식으로 오류가 발생하는 것을 확인할 수 있는데 이런식으로 URL을 사용하는 경우에는 `with` 프로퍼티가 사용해야한다고 나온다.  
+```
+            <Image src='https://images.unsplash.com/photo-1441986300917-64674bd600d8'
+                   alt='shop'
+                   width={400}
+            />
+```
+width 프로퍼티를 추가하고 확인해보면  
+![](../public/img3.png)  
+Invalid src prop 이라고 여전히 오류가 나오는 것을 확인할 수 있다.  
+이렇게 외부 소스를 사용하기 위해서는 next.config.js 에 등록을 해줘야 한다.  
+```
+const nextConfig = {
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'images.unsplash.com',
+
+            }
+        ]
+    }
+}
+```
+추가적으로 한페이지에 이미지가 여러 개 있으면 이미지 렌더링하는 우선순위를 지정해 줄 수 있는다.  
+```
+            <Image src='https://images.unsplash.com/photo-1441986300917-64674bd600d8'
+                   alt='shop'
+                   width={400}
+                   priority // 우선순위
+            />
+```
+### 정리
+next.js 에서 제공해주는 `Image` 컴퍼넌트를 사용하면 이미지 최적화 뿐만 아니라  
+이미지 사이즈를 지정해주면 지정한 공간만큼 미리 html에 만들어 두기때문에 이미지가 다운로드되기전과 다운로드된 후에  
+이미지가 차지하는 공간이 변하지 않기때문에 이러한 사이즈변화로 발생하는 layout shift가 발생하지 않는다.  
+#### 즉 불필요하게 html을 다시 렌더링하지 않는다.
+

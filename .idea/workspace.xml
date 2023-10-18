@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="렌더링 UI">
-      <change afterPath="$PROJECT_DIR$/ui/src/app/products/error.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ui/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/src/app/products/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/app/products/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
