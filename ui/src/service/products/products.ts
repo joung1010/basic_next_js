@@ -5,6 +5,7 @@ export type Product = {
     id: string;
     name: string;
     price: number;
+    image: string;
 }
 export async function getProducts():Promise<Product[]> {
     const filePath = path.join(process.cwd(), 'data','products.json');
