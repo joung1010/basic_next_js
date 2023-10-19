@@ -358,3 +358,39 @@ module.exports = {
 ```
 ![](../public/rew.png)  
 이렇게 실제 경로는 `/about/me/mason` 이지만 외부에 노출되는 URL을 Rewrites에 설정한 URL로 대체할 수 있다.  
+  
+## 동적 Redirect
+만약 로그인을 안한 사용자가 내정보 와 같은 페이지에 접근했을때 로그인 여부를 판단해서 로그인 하지 않았다면 로그인 페이지로 이동하거나  
+또는 존재 하지 않는 제품 코드로 접근한 사용자를 전체 상품 페이지로 이동시키는 등 과 같이 동적으로 사용자를 이동시키기 위해서는  
+next.js 에서 제공하는 `redirect` 함수를 사용하면 된다.
+```
+export default async function ProductPage({params: {slug}}: Props) {
+    const product = await getProduct(slug);
+    if (!product) {
+        redirect('/경로');
+    }
+    return (
+        <>
+        ....
+        <GoProductsButton/>
+        </>
+    );
+}
+```
+![](../public/redriect.gif)  
+  
+### 확인사항
+만약 되돌오간 페이지에 다른 페이지로 이동하는 버튼을 만들고싶다.  
+하지만 서버 컴퍼넌트에서는 이벤트 처리를 할 수 없기 때문에 해당 부분을 클라이언트 컴퍼넌트로 만들어서 처리해야된다.  
+```
+'use client';
+import React from 'react';
+import {useRouter} from "next/navigation";
+
+function GoProductsButton() {
+    const router = useRouter();
+    return (
+        <button onClick={() => {router.push('/products')}}>제품 페이지</button>
+    );
+}
+```
