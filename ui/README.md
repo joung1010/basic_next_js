@@ -332,3 +332,29 @@ module.exports = nextConfig
 > - `source`: 원래의 URL 경로를 나타냅니다.
 > - `destination`: 리디렉션 후 이동할 URL 경로를 나타냅니다.
 > - `permanent`: 리디렉션의 유형을 나타내며, `true`이면 영구 리디렉션(301 Redirect)을 의미하고, `false`이면 일시적인 리디렉션(302 Redirect)을 의미합니다.
+
+
+## Rewrite 
+URL에 보안상에 민감한 Key나 복잡한 URL을 다른 URL로 대체할 수 있게 해준다.  
+```
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/about',
+        destination: '/',
+      },
+     {
+        source: '/mason',
+        destination: '/about/me/mason',
+      },
+      {
+        source: '/items/:slug',
+        destination: '/products/:slug',
+      },
+    ]
+  },
+}
+```
+![](../public/rew.png)  
+이렇게 실제 경로는 `/about/me/mason` 이지만 외부에 노출되는 URL을 Rewrites에 설정한 URL로 대체할 수 있다.  
