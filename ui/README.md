@@ -394,3 +394,48 @@ function GoProductsButton() {
     );
 }
 ```
+
+## 미들웨어
+우리가 어떤 페이지에 접근할때 공통적으로 처리하는 로직이 있다면  
+이 로직을 모든 로직마다 수행하는 것은 너무 비효율적이다.  
+따라서 이러한 공통으로 처리되어야 하는 로직이 있다면  
+공통으로 추출하여 모든 로직을 접근하기전에 문지기처럼 미들웨어 역할을 하게 만들 수 있다.  
+이 미들웨어는 src 폴더 최상위, 또는 src를 사용하지 않는다면 프로젝트 최상위에 위치해야 한다.  
+![](../public/middle.png)  
+```
+import {NextRequest} from "next/server";
+
+export function middleware(request:NextRequest) {
+    console.log('미들웨어가 검사중..');
+    //.... 로직
+}
+```
+```
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
+ 
+// This function can be marked `async` if using `await` inside
+export function middleware(request: NextRequest) {
+  return NextResponse.redirect(new URL('/home', request.url))
+}
+ 
+// See "Matching Paths" below to learn more
+export const config = {
+  matcher: '/about/:path*',
+}
+```
+![](../public/middle2.png) 
+  
+  
+하지만 이 미들웨어는 전체 페이제에서 수행되어지기 때문에 특정한 페이지에서만 수행하고 싶다면 config 객체를 통해 이를 설정할 수 있다.  
+```
+export const config = {
+  matcher: ['/about/:path*', '/dashboard/:path+'],
+}
+/*
+:path* : path가 있거나(많거나) 없거나 둘 다 가능
+:path+ : path가 하나 또는 많거나
+*/
+```
+
+[미들웨어 공식문서](https://nextjs.org/docs/app/building-your-application/routing/middleware)
