@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="Vercel 배포" />
+    <list default="true" id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="Vercel 배포">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +68,7 @@
       <workItem from="1697448824771" duration="140000" />
       <workItem from="1697449857843" duration="4000" />
       <workItem from="1697501248919" duration="661000" />
-      <workItem from="1698053524900" duration="1793000" />
+      <workItem from="1698053524900" duration="2405000" />
     </task>
     <task id="LOCAL-00001" summary="API 라우터 추가">
       <option name="closed" value="true" />
