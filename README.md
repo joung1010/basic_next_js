@@ -233,6 +233,9 @@ git push
 배포시에 생성되는 HTML,JS,CSS 파일들은 .next 폴더안에 생성된다.  
 ![](public/nextFile.png)  
 이때 Vercel에 배포하게 되면 자동으로 next.js를 감지해서 별도의 설정없이 손쉽게 배포할 수 있다.  
+추가적으로 .env 파일에 있는 설정값들에 대한 접근은  
+서버 컴퍼넌트나 서버에서 동작하는 함수(getStaticProps)에서는 `process.env`로 접근할 수 있고  
+클라이언트 컴퍼넌트에서 접근해야 한다면 `NEXT_PUBLIC`키워드를 env파일에 붙여줘야만 접근이 가능하다.  
 [next.js deploy 공식문서](https://nextjs.org/docs/app/building-your-application/deploying)
 
 ## 에러

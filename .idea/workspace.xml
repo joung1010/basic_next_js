@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="Vercel CI/CD3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="공식문서 추가">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698057991023</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="공식문서 추가">
+      <option name="closed" value="true" />
+      <created>1698058809967</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698058809967</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +136,7 @@
     <MESSAGE value="렌더링 UI" />
     <MESSAGE value="Vercel 배포" />
     <MESSAGE value="Vercel CI/CD3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vercel CI/CD3" />
+    <MESSAGE value="공식문서 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="공식문서 추가" />
   </component>
 </project>
