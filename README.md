@@ -224,6 +224,12 @@ git checkout -b deploy
 ```
 git push
 ```
+![](public/CInCD3.png)  
+이렇게 추가된 브랜치까지 감지되는 것을 확인할 수 있다.  
+![](public/CInCD4.png)  
+세팅 메뉴에 들어가면 배포할 브랜치를 지정할 수 있다.  
+
+
 
 ## 에러
 next.js 에서  
