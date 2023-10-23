@@ -191,6 +191,18 @@ next.js 프로젝트를 다운로드 받으면 이렇게 app 이라는 디렉토
 ## API 라우터
 [Next.js 렌더링](./rendering/route/README.md)  
 
+## 배포
+1. Vercel 계정 생성
+2. git hub import
+   ![](public/deployt.png)
+3. 배포 세팅
+    * ![](public/deploy.png)
+      * build시 필요한 세팅을 할 수 있다.
+    * ![](public/deploy2.png)
+      * 배포시 환경변수를 설정할 수 있다.
+4. Deploy 버튼 클릭
+
+
 ## 에러
 next.js 에서  
 `Error: Cannot find module 'tailwindcss'`  
