@@ -215,6 +215,22 @@ next.js 프로젝트를 다운로드 받으면 이렇게 app 이라는 디렉토
 이렇게 Vercel에서 제공하는 기본 세팅을 사용하게 되면 나의 변경사항이 바로 즉시 반영되기 때문에  
 만약 버그가 있다면 그 버그 까지도 즉석으로 반영된다.
 
+### 기본 설정
+개발 브런치와 실제 배포되는 브런치를 분리해서 관리한다.
+```
+git checkout -b deploy
+```
+그런 다음 분리된 branch를 push 해준다.
+```
+git push
+```
+![](public/CInCD3.png)  
+이렇게 추가된 브랜치까지 감지되는 것을 확인할 수 있다.  
+![](public/CInCD4.png)  
+세팅 메뉴에 들어가면 배포할 브랜치를 지정할 수 있다.
+
+
+
 ## 에러
 next.js 에서  
 `Error: Cannot find module 'tailwindcss'`  
