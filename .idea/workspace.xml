@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="Vercel 배포">
-      <change afterPath="$PROJECT_DIR$/public/CInCD3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CInCD4.png" afterDir="false" />
+    <list default="true" id="8edf4158-87f7-488b-a6e8-442756046c8b" name="Changes" comment="Vercel CI/CD3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +48,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\joung\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -105,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698055965343</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Vercel CI/CD3">
+      <option name="closed" value="true" />
+      <created>1698057991023</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698057991023</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +128,7 @@
     <MESSAGE value="API 라우터 추가" />
     <MESSAGE value="렌더링 UI" />
     <MESSAGE value="Vercel 배포" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vercel 배포" />
+    <MESSAGE value="Vercel CI/CD3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vercel CI/CD3" />
   </component>
 </project>

@@ -229,7 +229,11 @@ git push
 ![](public/CInCD4.png)  
 세팅 메뉴에 들어가면 배포할 브랜치를 지정할 수 있다.
 
-
+### 공식 문서
+배포시에 생성되는 HTML,JS,CSS 파일들은 .next 폴더안에 생성된다.  
+![](public/nextFile.png)  
+이때 Vercel에 배포하게 되면 자동으로 next.js를 감지해서 별도의 설정없이 손쉽게 배포할 수 있다.  
+[next.js deploy 공식문서](https://nextjs.org/docs/app/building-your-application/deploying)
 
 ## 에러
 next.js 에서  
